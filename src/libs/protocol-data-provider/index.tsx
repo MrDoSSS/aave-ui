@@ -34,7 +34,6 @@ const getInitialMarket = () => {
 
 export function ProtocolDataProvider({ children }: PropsWithChildren<{}>) {
   const [currentMarket, setCurrentMarket] = useState<CustomMarket>(getInitialMarket());
-
   const currentMarketData = marketsData[currentMarket];
 
   const handleSetMarket = (market: CustomMarket) => {
